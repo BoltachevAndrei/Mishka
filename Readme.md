@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Болтачев](https://up.htmlacademy.ru/adaptive/17/user/1070841).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/adaptive/17/user/23249).
 
 ---
 
