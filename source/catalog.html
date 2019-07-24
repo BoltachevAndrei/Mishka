@@ -7,18 +7,22 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
-          <img class="mishka-logo" src="mishka.svg" alt="Логотип Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
-        <ul class="main-nav__list">
+      <div class="page-header__wrapper">
+        <div class="header-top">
+          <a href="index.html">
+            <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+          </a>
+          <button class="header-top__toggle">Открыть меню</button>
+        </div>
+        <ul class="main-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="main-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="">Поиск по сайту</a>
           </li>
@@ -26,7 +30,16 @@
             <a class="main-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
-      </nav>
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-header__free-shipping">Бесплатная доставка по России</p>
     </header>
     <main class="page-main">
       <h1 class="page-title">Каталог товаров</h1>
@@ -34,7 +47,7 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__link" href="product-1.html">
-              <img class="products__image" src="product-1.jpg" alt="Зайчик-попрыгайчик">
+              <img class="products__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" height="195" width="260">
               <h2 class="products__title">Зайчик-попрыгайчик</h2>
             </a>
             <p class="products__parameters">Рост 30 см, вес 200 г</p>
@@ -43,7 +56,7 @@
           </li>
           <li class="products__item">
             <a class="products__link" href="product-2.html">
-              <img class="products__image" src="product-2.jpg" alt="Корзинка для белья">
+              <img class="products__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" height="195" width="260">
               <h2 class="products__title">Корзинка для белья</h2>
             </a>
             <p class="products__parameters">Диаметр 15 см, высота 10 см</p>
@@ -52,7 +65,7 @@
           </li>
           <li class="products__item">
             <a class="products__link" href="product-3.html">
-              <img class="products__image" src="product-3.jpg" alt="Большая корзинка для игрушек">
+              <img class="products__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" height="195" width="260">
               <h2 class="products__title">Большая корзинка для игрушек</h2>
             </a>
             <p class="products__parameters">Диаметр 30 см, высота 30 см</p>
@@ -63,29 +76,34 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/">
-            <img src="instagram.svg" alt="Инстаграм">
+        <div class="page-footer__wrapper">
+          <a href="index.html">
+            <img class="page-footer__logo" src="img/logo-footer.svg" alt="Логотип «Мишка»" height="34" width="102">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-            <img src="facebook.svg" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/">
-            <img src="twitter.svg" alt="Твиттер">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="htmlacademy.svg" alt="Лого Академии">
-        </a>
-      </div>
-    </footer>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/">
+                <img src="img/icon-insta.svg" alt="Инстаграм" height="21" width="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+                <img src="img/icon-fb.svg" alt="Фейсбук" height="28" width="15">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/">
+                <img src="img/icon-twitter.svg" alt="Твиттер" height="20" width="23">
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="Лого Академии" height="34" width="27">
+            </a>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>

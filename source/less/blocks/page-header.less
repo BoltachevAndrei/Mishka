@@ -1,3 +1,36 @@
 .page-header {
   background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.page-header__free-shipping {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+  .page-header__free-shipping {
+    display: block;
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 1050px;
+  }
 }
