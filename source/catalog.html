@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,37 +10,39 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="header-top">
-          <a href="index.html">
-            <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
-          </a>
-          <button class="header-top__toggle">Открыть меню</button>
+          <div class="header-top__wrapper">
+            <a href="index.html">
+              <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+            </a>
+            <button class="header-top__toggle">Открыть меню</button>
+          </div>
         </div>
-        <ul class="main-nav">
-          <li class="main-nav__item">
+        <ul class="main-nav main-nav--group-1">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav">
-          <li class="main-nav__item">
+        <ul class="main-nav main-nav--group-2">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="main-nav">
-          <li class="main-nav__item">
+        <ul class="main-nav main-nav--group-3">
+          <li class="main-nav__item main-nav__item--arrival">
             <a class="main-nav__link" href="">Новые поступления</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--sale">
             <a class="main-nav__link" href="">Распродажа</a>
           </li>
         </ul>
+        <p class="page-header__free-shipping">Бесплатная доставка по России</p>
       </div>
-      <p class="page-header__free-shipping">Бесплатная доставка по России</p>
     </header>
     <main class="page-main">
       <h1 class="page-title">Каталог товаров</h1>
