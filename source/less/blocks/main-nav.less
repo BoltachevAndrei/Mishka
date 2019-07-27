@@ -1,11 +1,60 @@
 .main-nav {
   background-color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav--group-3 {
+  display: none;
+}
+
+.main-nav__item {
+  box-shadow: inset 0 1px 0 0 #ececec;
+}
+
+.main-nav__item--cart {
+  box-shadow: inset 0 1px 0 0 #ececec,
+    inset 0 -1px 0 0 #ececec;
 }
 
 .main-nav__link {
-  font-size: 17px;
-  line-height: 24px;
   color: #000000;
+  display: block;
   font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
   font-weight: bold;
+  line-height: 24px;
+  margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--group-1,
+  .main-nav--group-2 {
+    display: flex;
+  }
+
+  .main-nav--group-2 {
+    order: 2;
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--group-1 {
+    order: 1;
+  }
+
+  .main-nav--group-2 {
+    order: 3;
+  }
+
+  .main-nav--group-3 {
+    display: flex;
+    order: 4;
+  }
 }

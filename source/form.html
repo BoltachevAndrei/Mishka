@@ -2,59 +2,80 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
-          <img class="mishka-logo" src="mishka.svg" alt="Логотип Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+      <div class="page-header__wrapper">
+        <div class="header-top">
+          <div class="header-top__wrapper">
+            <a href="index.html">
+              <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+            </a>
+            <button class="header-top__toggle">Открыть меню</button>
+          </div>
+        </div>
+        <ul class="main-nav main-nav--group-1">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+        </ul>
+        <ul class="main-nav main-nav--group-2">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link" href="">Корзина: пока пуста</a>
           </li>
         </ul>
-      </nav>
+        <ul class="main-nav main-nav--group-3">
+          <li class="main-nav__item main-nav__item--arrival">
+            <a class="main-nav__link" href="">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link" href="">Распродажа</a>
+          </li>
+        </ul>
+        <p class="page-header__free-shipping">Бесплатная доставка по России</p>
+      </div>
     </header>
     <main class="page-main">
 
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/">
-            <img src="instagram.svg" alt="Инстаграм">
+        <div class="page-footer__wrapper">
+          <a href="index.html">
+            <img class="page-footer__logo" src="img/logo-footer.svg" alt="Логотип «Мишка»" height="34" width="102">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-            <img src="facebook.svg" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/">
-            <img src="twitter.svg" alt="Твиттер">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="htmlacademy.svg" alt="Лого Академии">
-        </a>
-      </div>
-    </footer>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/">
+                <img src="img/icon-insta.svg" alt="Инстаграм" height="21" width="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+                <img src="img/icon-fb.svg" alt="Фейсбук" height="28" width="15">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/">
+                <img src="img/icon-twitter.svg" alt="Твиттер" height="20" width="23">
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="Лого Академии" height="34" width="27">
+            </a>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.header-top {
+  box-shadow: inset 0 1px 0 0 #ececec;
+}
+
+.header-top__wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .header-top {
+    box-shadow: none;
+  }
+
+  .header-top__toggle {
+    display: none;
+  }
+
+  .header-top__wrapper {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-top {
+    order: 2;
+  }
+}
