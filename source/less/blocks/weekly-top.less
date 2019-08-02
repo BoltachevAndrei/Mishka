@@ -1,7 +1,6 @@
 .weekly-top {
   background-color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .weekly-top__wrapper {
@@ -10,20 +9,25 @@
   width: 260px;
 }
 
+.weekly-top__name {
+  color: #000000;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0 0 6px;
+  padding: 0;
+}
+
 .weekly-top__title {
   color: @light-green;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
-}
-
-.weekly-top__price {
-  color: @dark-gray;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
+  margin: 0 0 22px;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .weekly-top__description {
@@ -32,29 +36,142 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 24px;
+  margin-bottom: 16px;
 }
 
-.weekly-top__name {
-  color: #000000;
+.weekly-top__price {
+  color: @dark-gray;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 25px;
+  font-size: 17px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 24px;
+  margin-bottom: 23px;
+  padding: 3px 0;
+  text-align: center;
+}
+
+.weekly-top__zigzag-line {
+  display: block;
+  margin-top: 35px;
 }
 
 @media (min-width: @tablet-width) {
   .weekly-top {
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-bottom: 50px;
   }
 
   .weekly-top__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 668px;
+  }
+
+  .weekly-top__wrapper-2 {
+    display: flex;
+    margin-bottom: 26px;
+  }
+
+  .weekly-top__name {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 -4px 6px;
+  }
+
+  .weekly-top__title {
+    font-size: 17px;
+    line-height: 17px;
+    margin: 13px 28px 0 auto;
+    text-align: center;
+    width: 70px;
+  }
+
+  .weekly-top__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 34px;
+    width: 292px;
+  }
+
+  .weekly-top__image {
+    height: 404px;
+    position: absolute;
+    right: 0;
+    top: 107px;
+    width: 333px;
+  }
+
+  .weekly-top__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-left: -4px;
+    width: 292px;
+  }
+
+  .weekly-top__order-button {
+    margin-bottom: 25px;
+    margin-left: -2px;
+  }
+
+  .weekly-top__zigzag-line {
+    margin-top: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .weekly-top {
+    margin-bottom: 63px;
+  }
+
   .weekly-top__wrapper {
+    margin-bottom: 70px;
+    width: 1050px;
+  }
+
+  .weekly-top__wrapper-2 {
+    margin-top: 50px;
+  }
+
+  .weekly-top__name {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 6px;
+    order: 2;
+    z-index: 1;
+  }
+
+  .weekly-top__description {
+    margin-bottom: 46px;
+    margin-left: 184px;
+  }
+
+  .weekly-top__parameters {
+    margin-bottom: 88px;
+    margin-left: 182px;
+  }
+
+  .weekly-top__title {
+    margin: 16px 54px 0;
+  }
+
+  .weekly-top__image {
+    height: 636px;
+    top: 0;
+    width: 525px;
+  }
+
+  .weekly-top__price {
+    margin-left: 182px;
+  }
+
+  .weekly-top__order-button {
+    margin-bottom: 0;
+    margin-left: 183px;
+  }
+
+  .weekly-top__zigzag-line {
+    margin: 0 auto;
     width: 1050px;
   }
 }

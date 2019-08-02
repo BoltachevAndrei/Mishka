@@ -1,7 +1,18 @@
 .button {
+  background-color: #ffffff;
+  border: 2px solid @dark-gray;
   color: @dark-gray;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
+  height: 52px;
   line-height: 20px;
+  text-transform: uppercase;
+  width: 259px;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 292px;
+  }
 }
