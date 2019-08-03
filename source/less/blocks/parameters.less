@@ -1,3 +1,12 @@
+.parameters {
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.parameters__group {
+  box-shadow: 0 1px 0 0 #e5e5e5;
+}
+
 .parameters__name,
 .parameters__value {
   color: @dark-gray;
@@ -5,4 +14,17 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 20px;
+  padding: 9px 25px 9px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .parameters {
+    margin-bottom: 34px;
+    width: 292px;
+  }
+
+  .parameters__name,
+  .parameters__value {
+    padding: 9px 0;
+  }
 }

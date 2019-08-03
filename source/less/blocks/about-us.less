@@ -4,18 +4,10 @@
   padding-right: 30px;
 }
 
-.about-us__wrapper {
+.about-us__wrapper-1 {
   background-color: #ffffff;
   margin: 0 auto;
   width: 260px;
-}
-
-.about-us__item {
-  color: #000000;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
 }
 
 .about-us__title {
@@ -24,6 +16,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
+  margin-bottom: 45px;
 }
 
 .about-us__list {
@@ -32,14 +25,66 @@
   padding: 0;
 }
 
+.about-us__item {
+  color: #000000;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  position: relative;
+}
+
+.about-us__icon {
+  fill: @light-green;
+  left: 4px;
+  position: absolute;
+  top: -10px;
+
+  &--flower {
+    left: 9px;
+    top: -13px;
+  }
+
+  &--money {
+    left: 1px;
+    top: -12px;
+  }
+
+  &--heart {
+    left: 8px;
+    top: -7px;
+  }
+
+  &--rocket {
+    left: -5px;
+    top: -9px;
+  }
+}
+
+.about-us__text {
+  margin: 0;
+  padding: 41px 0 42px;
+}
+
 @media (min-width: @tablet-width) {
   .about-us {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .about-us__wrapper {
+  .about-us__wrapper-1 {
     width: 668px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 48px;
+    margin-left: -4px;
+  }
+
+  .about-us__wrapper-2 {
+    display: flex;
   }
 
   .about-us__list {
@@ -50,7 +95,38 @@
   }
 
   .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
     width: 300px;
+  }
+
+  .about-us__icon {
+    left: 4px;
+    top: 4px;
+
+    &--flower {
+      left: 9px;
+      top: 1px;
+    }
+
+    &--money {
+      left: 1px;
+      top: 2px;
+    }
+
+    &--heart {
+      left: 8px;
+      top: 7px;
+    }
+
+    &--rocket {
+      left: -5px;
+      top: 5px;
+    }
+  }
+
+  .about-us__text {
+    padding: 55px 0 56px;
   }
 }
 
@@ -60,7 +136,17 @@
     padding-right: 225px;
   }
 
-  .about-us__wrapper {
+  .about-us__wrapper-1 {
     width: 750px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: -5px;
+  }
+
+  .about-us__list--right {
+    margin-right: 50px;
   }
 }
