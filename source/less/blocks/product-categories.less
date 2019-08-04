@@ -13,6 +13,13 @@
   padding-top: 43px;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .product-categories__wrapper {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+}
+
 .product-categories__list {
   list-style: none;
   margin: 0;
@@ -38,14 +45,14 @@
 }
 
 .product-categories__link {
+  align-items: center;
   color: #ffffff;
+  display: flex;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
   padding: 6px 28px 11px;
-  display: flex;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -71,8 +78,18 @@
 @media (min-width: @tablet-width) {
   .product-categories {
     margin-bottom: 45px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+    &::before {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 30px;
+      background-size: 768px 24px;
+      bottom: -12px;
+      content: "";
+      height: 24px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 
   .product-categories__wrapper {
@@ -83,6 +100,13 @@
     margin: 0 auto;
     padding-top: 110px;
     width: 668px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .product-categories__wrapper {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .product-categories__description {
@@ -132,16 +156,30 @@
 @media (min-width: @desktop-width) {
   .product-categories {
     margin-bottom: 73px;
+
+    &::before {
+      background-position-x: 50px;
+      background-size: 1150px 34px;
+      bottom: -20px;
+      height: 34px;
+    }
   }
 
   .product-categories__wrapper {
+    background-image: url("../img/hero-desktop@1x.jpg");
     width: 1050px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .product-categories__wrapper {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .product-categories__description {
     font-size: 53px;
     line-height: 57px;
-    margin: 45px auto 359px;
+    margin: 45px auto 357px;
     width: 612px;
   }
 
