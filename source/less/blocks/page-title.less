@@ -7,6 +7,7 @@
   line-height: 30px;
   margin: 0 0 30px;
   padding: 70px 30px 76px;
+  position: relative;
   text-align: center;
 }
 
@@ -16,6 +17,18 @@
     line-height: 50px;
     margin: 0 0 -14px;
     padding: 97px 30px;
+
+    &::after {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 30px;
+      background-size: 768px 24px;
+      bottom: 10px;
+      content: "";
+      height: 24px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 }
 
@@ -25,5 +38,12 @@
     line-height: 57px;
     margin: 0 auto;
     padding: 97px 30px;
+
+    &::after {
+      background-position-x: 50px;
+      background-size: 1150px 34px;
+      bottom: -20px;
+      height: 34px;
+    }
   }
 }

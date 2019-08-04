@@ -20,15 +20,27 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: auto;
+  margin: auto 0 auto auto;
   outline: none;
   padding: 0 2px 0 0;
+}
+
+.header-top__toggle--close {
+  background-image: url("../img/icon-menu-close.svg");
+  height: 20px;
+  width: 21px;
+}
+
+.header-top__toggle--open {
+  background-image: url("../img/icon-menu-open.svg");
+  height: 14px;
+  width: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .header-top {
     box-shadow: none;
-    margin-right: 207px;
+    margin-right: auto;
     order: 1;
   }
 
