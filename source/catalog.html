@@ -156,6 +156,16 @@
           </li>
         </ul>
       </section>
+      <section class="production-process">
+        <h2 class="production-process__title">Процесс производства</h2>
+        <video class="production-process__video" poster="img/video-mobile@1x.jpg">
+          <source src="production-process.mp4" type="video/mp4">
+          <source src="production-process.ogg" type="video/ogg">
+          <source src="production-process.webm" type="video/webm">
+        </video>
+        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="weekly-top__order-button button">Сделать заказ</button>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -197,5 +207,26 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal--to-cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal__sizes-list">
+          <li class="modal__sizes-item modal__sizes-item--checked">
+            <input type="radio" id="size-s" name="size" value="size-s" checked>
+            <label class="modal__sizes-label" for="size-s">S</label>
+          </li>
+          <li class="modal__sizes-item">
+            <input type="radio" id="size-m" name="size" value="size-m">
+            <label class="modal__sizes-label" for="size-m">M</label>
+          </li>
+          <li class="modal__sizes-item">
+            <input type="radio" id="size-l" name="size" value="size-l">
+            <label class="modal__sizes-label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="modal-button button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
