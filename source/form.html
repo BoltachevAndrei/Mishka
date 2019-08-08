@@ -124,11 +124,11 @@
             <ul>
               <li>
                 <label class="order-form__label" for="first-name">Имя:</label>
-                <input class="order-form__input" type="text" placeholder="Введите ваше имя*" id="first-name">
+                <input class="order-form__input" type="text" placeholder="Введите ваше имя*" id="first-name" required>
               </li>
               <li>
                 <label class="order-form__label" for="last-name">Фамилия:</label>
-                <input class="order-form__input" type="text" placeholder="Укажите фамилию*" id="last-name">
+                <input class="order-form__input" type="text" placeholder="Укажите фамилию*" id="last-name" required>
               </li>
               <li>
                 <label class="order-form__label" for="middle-name">Отчество:</label>
@@ -139,11 +139,11 @@
           <ul>
             <li>
               <label class="order-form__label order-form__label--legend" for="phone">ТЕЛ</label>
-              <input class="order-form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone">
+              <input class="order-form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone" required>
             </li>
             <li>
               <label class="order-form__label order-form__label--legend" for="email">E-mail</label>
-              <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*" id="email">
+              <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*" id="email" required>
             </li>
           </ul>
           <label class="order-form__label order-form__label--fieldset" for="additional">ДОП</label>
@@ -193,26 +193,5 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal--to-cart">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <ul class="modal__sizes-list">
-          <li class="modal__sizes-item modal__sizes-item--checked">
-            <input type="radio" id="size-s" name="size" value="size-s" checked>
-            <label class="modal__sizes-label" for="size-s">S</label>
-          </li>
-          <li class="modal__sizes-item">
-            <input type="radio" id="size-m" name="size" value="size-m">
-            <label class="modal__sizes-label" for="size-m">M</label>
-          </li>
-          <li class="modal__sizes-item">
-            <input type="radio" id="size-l" name="size" value="size-l">
-            <label class="modal__sizes-label" for="size-l">L</label>
-          </li>
-        </ul>
-        <button class="modal-button button" type="submit">Добавить</button>
-      </form>
-    </section>
   </body>
 </html>
