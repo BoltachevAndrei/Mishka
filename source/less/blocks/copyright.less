@@ -1,3 +1,15 @@
+.copyright {
+  &:hover .copyright__link {
+    &:hover {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__text {
   color: #000000;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -8,10 +20,7 @@
 }
 
 .copyright__link {
+  fill: @light-green;
   margin-left: 29px;
   margin-top: 23px;
-}
-
-.copyright__link svg {
-  fill: @light-green;
 }

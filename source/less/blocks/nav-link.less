@@ -1,5 +1,21 @@
+.nav-link {
+  &:hover .nav-link__icon {
+    fill: @light-green;
+    opacity: 1;
+  }
+
+  &:hover .nav-link__text {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .nav-link__icon {
   margin-left: auto;
+  opacity: 0.2;
   padding: 4px 24px 0 30px;
 }
 
