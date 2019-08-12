@@ -119,8 +119,9 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "htmlminify", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "htmlminify","refresh"));
+  gulp.watch("source/js/*.js", gulp.series("jsminify", "refresh"));
 });
 
 gulp.task("refresh", function(done) {
