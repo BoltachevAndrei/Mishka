@@ -24,12 +24,12 @@
                 <img src="img/logo-mobile.svg" alt="Логотип Мишка">
               </picture>
             </a>
-            <button class="header-top__toggle header-top__toggle--close">
+            <button class="header-top__toggle header-top__toggle--show">
               <span class="visually-hidden">Открыть/Закрыть меню</span>
             </button>
           </div>
         </div>
-        <ul class="main-nav main-nav--group-1">
+        <ul class="main-nav main-nav--group-1 main-nav--show">
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link nav-link nav-link--catalog" href="catalog.html">
               <p class="nav-link__text nav-link__text--catalog">Каталог товаров</p>
@@ -41,7 +41,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav main-nav--group-2">
+        <ul class="main-nav main-nav--group-2 main-nav--show">
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link nav-link nav-link--search" href="">
               <svg class="nav-link__icon nav-link__icon--search" height="18" width="18">
@@ -209,7 +209,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal--to-cart">
+    <section class="modal modal--to-cart modal--hide">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -230,5 +230,6 @@
         <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
