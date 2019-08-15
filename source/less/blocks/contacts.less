@@ -1,3 +1,42 @@
+.contacts__wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.contacts__map-interactive {
+  border: none;
+  height: 457px;
+  width: 100%;
+}
+
+.contacts__button {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1050px;
+  }
+
+  .contacts__wrapper {
+    width: 525px;
+  }
+
+  .contacts__map-interactive {
+    display: block;
+    width: 525px;
+  }
+}
+
 .contacts__title {
   color: #000000;
   font-family: "OpenSans", "Arial", sans-serif;

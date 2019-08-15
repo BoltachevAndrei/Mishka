@@ -4,6 +4,8 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .order-form__description {
@@ -12,10 +14,19 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .order-form__fieldset {
   border: none;
+  margin: 0 auto;
+  width: 260px;
+}
+
+.order-form__contacts-list {
+  margin: 0 auto;
+  width: 260px;
 }
 
 .order-form__legend {
@@ -32,10 +43,6 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
-}
-
-.order-form__label--legend {
-  color: @light-green;
 }
 
 .order-form__input {
@@ -67,12 +74,15 @@
 
 .order-form__textarea {
   border: solid 2px #000000;
+  box-sizing: border-box;
   color: @dark-gray;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
+  height: 142px;
   line-height: 18px;
   resize: none;
+  width: 260px;
 
   &:hover {
     border: solid 2px #62d1ba;
@@ -84,23 +94,41 @@
   }
 }
 
+.order-form__button {
+  margin: 0 auto;
+}
+
 .order-form__notes {
   color: @dark-gray;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 @media (min-width: @tablet-width) {
   .order-form__title {
     font-size: 43px;
     line-height: 50px;
+    width: 668px;
   }
 
   .order-form__description {
     font-size: 17px;
     line-height: 30px;
+    width: 668px;
+  }
+
+  .order-form__wrapper--colors,
+  .order-form__wrapper--contacts {
+    background-color: @light-gray;
+  }
+
+  .order-form__fieldset,
+  .order-form__contacts-list {
+    width: 668px;
   }
 
   .order-form__label {
@@ -108,7 +136,7 @@
     line-height: 18px;
   }
 
-  .order-form__label--legend {
+  .order-form__legend {
     font-size: 17px;
   }
 
@@ -120,6 +148,7 @@
   .order-form__notes {
     font-size: 17px;
     line-height: 30px;
+    width: 300px;
   }
 }
 
@@ -127,5 +156,14 @@
   .order-form__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .order-form__description {
+    width: 670px;
+  }
+
+  .order-form__fieldset,
+  .order-form__contacts-list {
+    width: 930px;
   }
 }
