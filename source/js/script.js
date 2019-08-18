@@ -1,5 +1,6 @@
-var order = document.querySelector(".weekly-top__order-button");
+var order = document.querySelectorAll(".js-button-order");
 var modal = document.querySelector(".modal");
+var overlay = document.querySelector(".overlay");
 var toggle = document.querySelector(".header-top__toggle");
 var mainNav1 = document.querySelector(".main-nav--group-1");
 var mainNav2 = document.querySelector(".main-nav--group-2");
@@ -23,9 +24,18 @@ toggle.addEventListener("click", function(evt) {
   }
 })
 
-order.addEventListener("click", function(evt) {
+for (var i = 0; i < order.length; i++) {
+  order[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal.classList.add("modal--show");
+    overlay.classList.add("overlay--show");
+  });
+};
+
+overlay.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modal.classList.add("modal--show");
+  modal.classList.remove("modal--show");
+  overlay.classList.remove("overlay--show");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -33,6 +43,7 @@ window.addEventListener("keydown", function (evt) {
     if (modal.classList.contains("modal--show")) {
       evt.preventDefault();
       modal.classList.remove("modal--show");
+      overlay.classList.remove("overlay--show");
     }
   }
 });
