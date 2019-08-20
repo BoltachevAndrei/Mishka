@@ -38,6 +38,7 @@
 
 .modal__sizes-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   margin: 0 auto 32px;
@@ -70,6 +71,16 @@
 
 .modal__sizes-input:checked + .modal__sizes-label {
   border-color: @light-green;
+}
+
+.modal__sizes-input {
+  &:focus + .modal__sizes-label {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active + .modal__sizes-label {
+    border-color: @light-green;
+  }
 }
 
 .modal__button {

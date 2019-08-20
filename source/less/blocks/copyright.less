@@ -1,10 +1,4 @@
 .copyright {
-  &:hover .copyright__link {
-    &:hover {
-      fill: #46c1ae;
-    }
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -23,4 +17,9 @@
   fill: @light-green;
   margin-left: 29px;
   margin-top: 23px;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
 }

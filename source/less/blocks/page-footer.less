@@ -12,7 +12,8 @@
 .page-footer__logo-icon {
   display: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #46c1ae;
   }
 
@@ -26,10 +27,12 @@
   box-shadow: 0 1px 0 0 #e5e5e5;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin: 0 0 3px;
   padding: 0;
+  width: 180px;
 }
 
 .page-footer__copyright {
@@ -51,16 +54,16 @@
 
   .page-footer__logo-icon {
     display: block;
-    margin-right: 138px;
     margin-top: 18px;
   }
 
   .page-footer__social {
     box-shadow: none;
+    margin-left: auto;
   }
 
   .page-footer__copyright {
-    margin-left: auto;
+    margin-left: 65px;
   }
 }
 
@@ -69,7 +72,11 @@
     width: 1050px;
   }
 
-  .page-footer__logo-icon {
-    margin-right: 328px;
+  .page-footer__social {
+    margin-left: auto;
+  }
+
+  .page-footer__copyright {
+    margin-left: 256px;
   }
 }

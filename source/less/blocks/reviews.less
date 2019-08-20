@@ -27,6 +27,10 @@
   padding: 0;
 }
 
+.reviews__text br {
+  display: none;
+}
+
 .reviews__author {
   display: block;
   margin-bottom: 31px;
@@ -69,10 +73,10 @@
   cursor: pointer;
   display: block;
   height: 52px;
-  outline: none;
   width: 130px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -100,6 +104,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 768px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .reviews__wrapper {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -159,7 +170,11 @@
 
   .reviews__text {
     margin: 0 0 40px 174px;
-    width: 768px;
+    width: 770px;
+  }
+
+  .reviews__text br {
+    display: block;
   }
 
   .reviews__author {

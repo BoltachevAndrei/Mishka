@@ -42,9 +42,9 @@
 }
 
 .contacts__type {
-  padding: 0 28px 0 0;
+  padding: 0 24px 0 0;
   vertical-align: top;
-  width: 47px;
+  width: 48px;
 }
 
 .contacts__value {
@@ -61,7 +61,8 @@
   position: relative;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #46c1ae;
   }
 
@@ -79,7 +80,7 @@
     width: 100%;
   }
 
-  &:active&::before {
+  &:active::before {
     background-color: rgba(70, 193, 174, 0.1);
   }
 }
@@ -110,9 +111,11 @@
 }
 
 .contacts__map-image {
+  height: 457px;
   left: 0;
   position: absolute;
   top: 0;
+  width: 322px;
   z-index: 1;
 }
 
@@ -185,6 +188,11 @@
     margin-bottom: 51px;
   }
 
+  .contacts__map-image {
+    height: 457px;
+    width: 768px;
+  }
+
   .contacts__button {
     margin: 0 auto 57px;
     width: 230px;
@@ -239,6 +247,11 @@
 
   .contacts__map-interactive {
     display: block;
+    width: 525px;
+  }
+
+  .contacts__map-image {
+    height: 457px;
     width: 525px;
   }
 

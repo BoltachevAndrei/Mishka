@@ -20,7 +20,7 @@
             <picture  class="header-top__logo-container">
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+              <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка" height="35" width="86">
             </picture>
             <button class="header-top__toggle header-top__toggle--show">
               <span class="visually-hidden">Открыть/Закрыть меню</span>
@@ -80,7 +80,7 @@
           <p class="product-categories__description">Милые штуки&#32;<br>ручной&#32;<br>работы для дома</p>
           <ul class="product-categories__list">
             <li class="product-categories__item">
-              <a class="product-categories__link" href="interior-items.html">
+              <a class="product-categories__link product-categories__link--interior" href="interior-items.html">
                 <p class="product-categories__name">Предметы<br>интерьера</p>
                 <svg class="product-categories__icon product-categories__icon--interior" height="62" width="40">
                   <use xlink:href="#icon-interior"></use>
@@ -88,7 +88,7 @@
               </a>
             </li>
             <li class="product-categories__item">
-              <a class="product-categories__link" href="kids-toys.html">
+              <a class="product-categories__link product-categories__link--toy" href="kids-toys.html">
                 <p class="product-categories__name">Детские<br>игрушки</p>
                 <svg class="product-categories__icon product-categories__icon--toy" height="60" width="60">
                   <use xlink:href="#icon-toy"></use>
@@ -159,7 +159,7 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+          <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br>&#32и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
           <cite class="reviews__author">
             <span class="reviews__author-name">Анастасия Красильникова</span>
             <span class="reviews__author-nickname">@misssssiskras</span>
@@ -197,7 +197,14 @@
         </div>
         <div class="contacts__map-container">
           <iframe class="contacts__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003404!2d30.3208587164867!3d59.93871916905368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1565020283640!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="Интернет-магазин Мишка по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" alt="Интернет-магазин Мишка по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" height="457" width="322">
+          </picture>
         </div>
         <a class="contacts__button button" href="add-feedback.html">Напишите нам</a>
       </section>
@@ -209,21 +216,21 @@
         </svg>
         <ul class="page-footer__social social">
           <li class="social__item social__item--instagram">
-            <a class="social__link" href="https://www.instagram.com/">
+            <a class="social__link" href="https://www.instagram.com/" aria-label="Переход на сайт Instagram">
               <svg height="21" width="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--facebook">
-            <a class="social__link" href="https://www.facebook.com/">
+            <a class="social__link" href="https://www.facebook.com/" aria-label="Переход на сайт Facebook">
               <svg height="28" width="15">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--twitter">
-            <a class="social__link" href="https://twitter.com/">
+            <a class="social__link" href="https://twitter.com/" aria-label="Переход на сайт Twitter">
               <svg height="20" width="23">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -232,7 +239,7 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
             <svg height="34" width="27">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>

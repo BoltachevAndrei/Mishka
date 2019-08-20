@@ -17,11 +17,11 @@
       <div class="page-header__wrapper">
         <div class="header-top">
           <div class="header-top__wrapper">
-            <a class="header-top__logo" href="index.html">
+            <a class="header-top__logo-link" href="index.html">
               <picture  class="header-top__logo-container">
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+                <img class="header-top__logo" src="img/logo-mobile.svg" alt="Логотип Мишка" height="35" width="86">
               </picture>
             </a>
             <button class="header-top__toggle header-top__toggle--show">
@@ -75,9 +75,8 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="order-form__title">Вязание на заказ</h1>
+      <h1 class="page-title page-title--form">Вязание на заказ</h1>
       <section class="order-form">
-        <!-- <h2 class="order-form__title">Вязание на заказ</h2> -->
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="order-form__wrapper order-form__wrapper--categories">
@@ -85,11 +84,11 @@
               <p class="order-form__legend">ТИП</p>
               <ul class="order-form__list order-form__list--categories">
                 <li>
-                  <input class="visually-hidden order-form__input" type="radio" name="type" id="interior" checked>
+                  <input class="visually-hidden order-form__input order-form__input--radio" type="radio" name="type" id="interior" checked>
                   <label class="order-form__label order-form__label--radio" for="interior">Аксессуар для интерьера</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="radio" name="type" id="toy">
+                  <input class="visually-hidden order-form__input order-form__input--radio" type="radio" name="type" id="toy">
                   <label class="order-form__label order-form__label--radio" for="toy">Детская игрушка</label>
                 </li>
               </ul>
@@ -100,27 +99,27 @@
               <p class="order-form__legend order-form__legend--colors">ЦВЕТ</p>
               <ul class="order-form__list order-form__list--colors">
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="white" checked>
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="white" checked>
                   <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="gray" checked>
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="gray" checked>
                   <label class="order-form__label order-form__label--checkbox" for="gray">Серый</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="tiffany">
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="tiffany">
                   <label class="order-form__label order-form__label--checkbox" for="tiffany">«Тиффани»</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="black">
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="black">
                   <label class="order-form__label order-form__label--checkbox" for="black">Черный</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="pink">
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="pink">
                   <label class="order-form__label order-form__label--checkbox" for="pink">Розовый</label>
                 </li>
                 <li>
-                  <input class="visually-hidden order-form__input" type="checkbox" name="color" id="orange">
+                  <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="color" id="orange">
                   <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
                 </li>
               </ul>
@@ -176,28 +175,28 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link" href="index.html">
-          <svg class="page-footer__logo-icon" height="34" width="102">
+        <a class="page-footer__logo-icon" href="index.html">
+          <svg height="34" width="102">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item social__item--instagram">
-            <a class="social__link" href="https://www.instagram.com/">
+            <a class="social__link" href="https://www.instagram.com/" aria-label="Переход на сайт Instagram">
               <svg height="21" width="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--facebook">
-            <a class="social__link" href="https://www.facebook.com/">
+            <a class="social__link" href="https://www.facebook.com/" aria-label="Переход на сайт Facebook">
               <svg height="28" width="15">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--twitter">
-            <a class="social__link" href="https://twitter.com/">
+            <a class="social__link" href="https://twitter.com/" aria-label="Переход на сайт Twitter">
               <svg height="20" width="23">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -206,7 +205,7 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
             <svg height="34" width="27">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>

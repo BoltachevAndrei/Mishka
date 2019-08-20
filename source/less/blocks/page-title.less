@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.page-title--form {
+  margin: 0 0 23px;
+}
+
 @media (min-width: @tablet-width) {
   .page-title {
     font-size: 43px;
@@ -30,6 +34,16 @@
       width: 100%;
     }
   }
+
+  .page-title--form {
+    margin: 0 0 60px;
+    padding: 92px 30px 94px;
+    position: relative;
+
+    &::after {
+      bottom: 0;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -45,5 +59,10 @@
       bottom: -20px;
       height: 34px;
     }
+  }
+
+  .page-title--form {
+    margin: 0 0 125px;
+    padding: 92px 30px 102px;
   }
 }
