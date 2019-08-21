@@ -41,7 +41,7 @@
         </ul>
         <ul class="main-nav main-nav--group-2 main-nav--show">
           <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link nav-link nav-link--search" href="">
+            <a class="main-nav__link nav-link nav-link--search" href="" aria-label="Поиск по сайту">
               <svg class="nav-link__icon nav-link__icon--search" height="18" width="18">
                 <use xlink:href="#icon-search"></use>
               </svg>
@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link nav-link nav-link--cart" href="">
+            <a class="main-nav__link nav-link nav-link--cart" href="" aria-label="Корзина">
               <svg class="nav-link__icon nav-link__icon--cart" height="18" width="21">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -128,7 +128,7 @@
             <img class="weekly-top__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" alt="Изображение товара недели" height="315" width="260">
           </picture>
           <p class="weekly-top__price">Цена: 990 руб.</p>
-          <button class="weekly-top__order-button button js-button-order">Заказать</button>
+          <a class="weekly-top__order-button button js-button-order" href="order.html">Заказать</a>
         </div>
       </section>
       <section class="about-us">
@@ -166,14 +166,14 @@
           </cite>
           <ul class="reviews__pagination-list">
             <li class="reviews__pagination-item reviews__pagination-item--previous">
-              <button class="reviews__pagination-button reviews__pagination-button--back">
+              <a class="reviews__pagination-button reviews__pagination-button--back" href="reviews.html">
                 <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
+              </a>
             </li>
             <li class="reviews__pagination-item reviews__pagination-item--next">
-              <button class="reviews__pagination-button reviews__pagination-button--forward">
+              <a class="reviews__pagination-button reviews__pagination-button--forward" href="reviews.html">
                 <span class="visually-hidden">Следующий отзыв</span>
-              </button>
+              </a>
             </li>
           </ul>
           <a class="reviews__button button" href="add-review.html">Написать</a>
